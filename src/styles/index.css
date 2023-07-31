@@ -1,0 +1,225 @@
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.perfil__img {
+    height: 3.125rem;
+}
+
+
+.reader__container {
+    width: 100%;
+    background-color: var(--gray0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+    color: var(--gray2);
+
+}
+
+
+
+.main__section {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.posts__container {
+    width: 60%;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.new__post__container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.new__post__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   align-items: flex-start;
+}
+
+.Form__title__post {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    border: solid 2px var(--gray2);
+    width: 30rem;
+    height: 3.5rem;
+} 
+
+.description__post__form {
+    width: 30rem;
+    height: 5.5rem;
+   border: solid 2px var(--gray2);
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+
+.suggestion__container {
+     width: 35%; 
+}
+
+button {
+    font-weight: var(--font-weight-titulo2);
+    font-size: var(--font-size-text2);
+}
+
+.post__button {
+     width: 4rem;
+    height: 2rem;
+    background-color: var(--brand-1);
+    color: var(--white-fixed);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+
+}
+
+.post__button:hover{
+    background-color: var(--brand-2);
+}
+
+.perfil__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+}
+
+.follow__button{
+    width: 4rem;
+    height: 2rem;
+    background-color: var(--white-fixed);
+    color: var(--gray1);
+    border: solid 0.5px var(--gray1);
+
+
+}
+
+.follow__button:hover{
+background-color: var(--white-fixed);
+border: solid 0.5px var(--brand-2);
+}
+
+.follow__button:focus{
+    background-color: var(--brand-2);
+    color: var(--white-fixed);
+}
+
+.open-post{
+    
+    width: 5rem;
+    height: 2rem;
+    background-color: var(--gray1);
+    color: var(--white-fixed);
+}
+
+.open-post:hover {
+    background-color: var(--gray0);
+}
+
+.Form__title__post:focus, .description__post__form:focus {
+    border: solid 2px var(--brand-2);
+}
+
+.open__post {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+@media(max-width: 1225px){
+
+
+    .main__section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.new__post__container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.new__post__form, .Form__title__post, .description__post__form{
+   width: 100%;
+   display: flex;
+   align-items: flex-start;
+   
+}
+
+.post__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.suggestion__container{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.list__suggestion{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.perfil__container{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+}
+
+.follow__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+

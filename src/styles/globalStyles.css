@@ -1,0 +1,38 @@
+:root {
+    /*estilos de cores gerais*/
+    --brand-1: #4263EB;
+    --brand-2: #364FC7;
+    --gray0: #0A0C0D;
+    --gray1: #212529;
+    --gray2: #495057;
+    --gray3: #868E96;
+    --gray4: #DEE2E6;
+    --gray5: #F8F9FA;
+    --gray-opacity-1: rgba(33, 37, 51, 0.5);
+    --white-fixed: #ffffff;
+    /*estilos de cor do like*/
+    --like: #D7443E;
+    /*estilos de fonte titulo 1*/
+    --font-weight-titulo1: 700;
+    --font-size-titulo1: 1.75rem;
+    --line-heigth-titulo1: 2.5rem;
+    /*estilos de fonte titulo 2*/
+    --font-weight-titulo2: 600;
+    --font-size-titulo2: 1.25rem;
+    --line-heigth-titulo2: 1.5rem;
+    /*estilos de fonte geral*/
+    --font-weight-text: 400;
+    /*estilos de fonte text 1*/
+    --font-size-text1: 1rem;
+    --line-heigth-text1: 1.75rem;
+    /*estilos de fonte text 2*/
+    --font-size-text2: 0.87rem;
+    --line-heigth-text2: 1rem;
+    /*estilos de fonte text 3*/
+    --font-size-text3: 0.7rem;
+    --line-heigth-text3: 1rem;
+    /* botoes */
+    
+
+}
+
