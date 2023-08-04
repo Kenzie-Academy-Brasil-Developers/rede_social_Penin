@@ -16,6 +16,10 @@ body {
     padding: 1rem;
     justify-content: space-between;
     color: var(--gray2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    
 
 }
 
@@ -24,12 +28,12 @@ body {
 .main__section {
     display: flex;
     flex-direction: row;
-    padding: 2rem;
+    padding: 4rem;
     justify-content: space-between;
 }
 
 .posts__container {
-    width: 60%;
+    width: 70%;
     
     display: flex;
     flex-direction: column;
@@ -103,14 +107,7 @@ button {
     background-color: var(--brand-2);
 }
 
-.perfil__container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    
-}
+
 
 .follow__button{
     width: 4rem;
@@ -122,6 +119,8 @@ button {
 
 }
 
+
+
 .follow__button:hover{
 background-color: var(--white-fixed);
 border: solid 0.5px var(--brand-2);
@@ -132,7 +131,14 @@ border: solid 0.5px var(--brand-2);
     color: var(--white-fixed);
 }
 
-.open-post{
+
+.perfil__name{
+    white-space: nowrap;
+}
+
+
+
+.henderButton{
     
     width: 5rem;
     height: 2rem;
@@ -156,13 +162,38 @@ border: solid 0.5px var(--brand-2);
     gap: 2rem;
 }
 
+.principal__text {
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.article__post{
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+
+.close__post1, .close__post2, .close__post3 {
+    width: 50px;
+    height: 50px;
+    font-size: large;
+    color: var(--gray2);
+    position: fixed;
+    right: 2rem;
+    background-color: white;
+}
+
 @media(max-width: 1225px){
 
 
     .main__section {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 4rem;
     justify-content: space-between;
 }
 
@@ -193,19 +224,30 @@ border: solid 0.5px var(--brand-2);
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    
 }
 
 .list__suggestion{
-    width: auto;
+ 
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 2rem;
+    justify-content: space-between;
+    overflow-y:hidden;
+    overflow-x: auto;
+    
 }
 
+.posts__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2rem;
+}
 
+/* 
 .perfil__container{
     display: flex;
     gap: 1rem;
@@ -213,12 +255,14 @@ border: solid 0.5px var(--brand-2);
     flex-wrap: wrap;
     align-items: flex-start;
     
-}
+    
+} */
 
 .follow__button{
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 }
