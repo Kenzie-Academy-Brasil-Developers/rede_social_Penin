@@ -18,9 +18,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
 
-    <!-- SCRIPT -->
+  <!-- SCRIPT -->
 
-    <script src="./src/scripts/index.js" defer></script>
+  <script src="./src/scripts/index.js" defer></script>
 
   <title>Criando rede social</title>
 </head>
@@ -30,7 +30,7 @@
   <header class="reader__container">
     <img class="reader_img" src="./src/assets/img/logo.svg" alt="" />
     <p class="reader__sair">Sair</p>
-</header>
+  </header>
 
   <!-- CONTEÚDO PRINCIPAL -->
   <main class="main__container">
@@ -38,7 +38,7 @@
     <section class="main__section">
       <!-- CRIAÇÃO DE UM NOVO POST -->
       <section class="new__post__container">
-        <div class="perfil">
+        <div class="perfil__post">
           <img class="perfil__img" src="./src/assets/img/user1.svg" alt="Samuel" />
           <div>
             <h2 class="secondary__title perfil__name">Samuel Leão</h2>
@@ -49,8 +49,9 @@
         <!-- FORM DE CRIAÇÃO DE UM NOVO POST -->
         <form class="new__post__form">
           <input class="Form__title__post" type="text" placeholder="Digite o título do post" required="" />
-          <textarea class="description__post__form" placeholder="Digite a descrição do post" name="" id="" cols="30" rows="5" required=""></textarea>
-          <button class="post__button" class="text2--bold"type="submit">Postar</button>
+          <textarea class="description__post__form" placeholder="Digite a descrição do post" name="" id="" cols="30"
+            rows="5" required=""></textarea>
+          <button class="post__button" class="text2--bold" type="submit">Postar</button>
         </form>
       </section>
 
@@ -60,7 +61,7 @@
         <ul class="list__suggestion">
           <!-- SUGESTÃO 1 -->
           <li class="perfil__container">
-            <div class="perfil">
+            <div class="perfil__post">
               <img class="perfil__img" src="./src/assets/img/user2.svg" alt="Carlos Lima" />
               <div>
                 <h2 class="secondary__title perfil__name">Carlos Lima</h2>
@@ -71,7 +72,7 @@
           </li>
           <!-- SUGESTÃO 2 -->
           <li class="perfil__container">
-            <div class="perfil">
+            <div class="perfil__post">
               <img class="perfil__img" src="./src/assets/img/user3.svg" alt="Rafael Bertoldo" />
               <div>
                 <h2 class="secondary__title perfil__name">Rafael Bertoldo</h2>
@@ -82,7 +83,7 @@
           </li>
           <!-- SUGESTÃO 3 -->
           <li class="perfil__container">
-            <div class="perfil">
+            <div class="perfil__post">
               <img class="perfil__img" src="./src/assets/img/user4.svg" alt="Júlia Martins" />
               <div>
                 <h2 class="secondary__title perfil__name">Júlia Martins</h2>
@@ -163,7 +164,7 @@
         </div>
       </article>
 
-        <!-- modal segundo post -->
+      <!-- modal segundo post -->
 
       <dialog class="second__modal"></dialog>
 
@@ -200,9 +201,9 @@
         </div>
       </article>
 
-<!-- modal terceiro post -->
+      <!-- modal terceiro post -->
 
-<dialog class="third__modal"></dialog>
+      <dialog class="third__modal"></dialog>
 
     </section>
   </main>
