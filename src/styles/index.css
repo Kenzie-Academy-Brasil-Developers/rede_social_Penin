@@ -19,7 +19,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    
+
 
 }
 
@@ -34,13 +34,13 @@ body {
 
 .posts__container {
     width: 70%;
-    
+
     display: flex;
     flex-direction: column;
     padding: 2rem;
 }
 
-.perfil {
+.perfil__post {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -59,7 +59,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-   align-items: flex-start;
+    align-items: flex-start;
 }
 
 .Form__title__post {
@@ -70,20 +70,27 @@ body {
     border: solid 2px var(--gray2);
     width: 30rem;
     height: 3.5rem;
-} 
+}
 
 .description__post__form {
     width: 30rem;
     height: 5.5rem;
-   border: solid 2px var(--gray2);
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
+    border: solid 2px var(--gray2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 
 .suggestion__container {
-     width: 35%; 
+    width: 35%;
+}
+
+.perfil__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
 
 button {
@@ -92,7 +99,7 @@ button {
 }
 
 .post__button {
-     width: 4rem;
+    width: 4rem;
     height: 2rem;
     background-color: var(--brand-1);
     color: var(--white-fixed);
@@ -103,13 +110,13 @@ button {
 
 }
 
-.post__button:hover{
+.post__button:hover {
     background-color: var(--brand-2);
 }
 
 
 
-.follow__button{
+.follow__button {
     width: 4rem;
     height: 2rem;
     background-color: var(--white-fixed);
@@ -121,25 +128,25 @@ button {
 
 
 
-.follow__button:hover{
-background-color: var(--white-fixed);
-border: solid 0.5px var(--brand-2);
+.follow__button:hover {
+    background-color: var(--white-fixed);
+    border: solid 0.5px var(--brand-2);
 }
 
-.follow__button:focus{
+.follow__button:focus {
     background-color: var(--brand-2);
     color: var(--white-fixed);
 }
 
 
-.perfil__name{
+.perfil__name {
     white-space: nowrap;
 }
 
 
 
-.henderButton{
-    
+.henderButton {
+
     width: 5rem;
     height: 2rem;
     background-color: var(--gray1);
@@ -150,7 +157,8 @@ border: solid 0.5px var(--brand-2);
     background-color: var(--gray0);
 }
 
-.Form__title__post:focus, .description__post__form:focus {
+.Form__title__post:focus,
+.description__post__form:focus {
     border: solid 2px var(--brand-2);
 }
 
@@ -163,107 +171,120 @@ border: solid 0.5px var(--brand-2);
 }
 
 .principal__text {
-    
+
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.article__post{
+.article__post {
     margin: 1rem 1rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 2rem;
+    position: relative;
 }
 
-.close__post1, .close__post2, .close__post3 {
+.close__post1,
+.close__post2,
+.close__post3 {
     width: 50px;
     height: 50px;
     font-size: large;
     color: var(--gray2);
-    position: fixed;
-    right: 2rem;
+    position: absolute;
+    right: 0px;
     background-color: white;
 }
 
-@media(max-width: 1225px){
+#first__modal,
+.second__modal,
+.third__modal {
+    width: 70%;
+}
+
+
+@media(max-width: 1225px) {
 
 
     .main__section {
-    display: flex;
-    flex-direction: column;
-    padding: 4rem;
-    justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        padding: 4rem;
+        justify-content: space-between;
+    }
+
+    .new__post__container {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .new__post__form,
+    .Form__title__post,
+    .description__post__form {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+
+    }
+
+    .post__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-end;
+    }
+
+    .suggestion__container {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+
+    .perfil__container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .list__suggestion {
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        gap: 2rem;
+        justify-content: space-between;
+        overflow-y: hidden;
+        overflow-x: auto;
+
+    }
+
+    .posts__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 2rem;
+    }
+
+    #first__modal,
+    .second__modal,
+    .third__modal {
+        width: 90%;
+    }
+
+    .follow__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
 }
-
-.new__post__container {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-}
-
-.new__post__form, .Form__title__post, .description__post__form{
-   width: 100%;
-   display: flex;
-   align-items: flex-start;
-   
-}
-
-.post__button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: flex-end;
-}
-
-.suggestion__container{
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    
-}
-
-.list__suggestion{
- 
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    gap: 2rem;
-    justify-content: space-between;
-    overflow-y:hidden;
-    overflow-x: auto;
-    
-}
-
-.posts__container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0rem 2rem;
-}
-
-/* 
-.perfil__container{
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    
-    
-} */
-
-.follow__button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-
-}
-

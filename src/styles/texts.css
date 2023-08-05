@@ -27,6 +27,10 @@ line-height: var(--line-heigth-titulo2);
     color: var(--gray2);
 }
 
-
+.text__modal{
+    font-weight: var(--font-weight-text);
+    font-size: var(--font-size-text1);
+    line-height: var(--line-heigth-text1);
+}
 
 
