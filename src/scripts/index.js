@@ -15,7 +15,7 @@ function henderPost() {
     //adicinando classes
 
     articlePost1.classList.add("article__post")
-    divPerfilPost1.classList.add("perfil")
+    divPerfilPost1.classList.add("perfil__post")
     imgDialogPost1.classList.add("perfil__img")
     h2post1.classList.add("secondary__title")
     ProficicaoPost1.classList.add("secondary__text")
@@ -55,7 +55,7 @@ function henderPost() {
     //adicinando classes
 
     articlePost2.classList.add("article__post")
-    divPerfilPost2.classList.add("perfil")
+    divPerfilPost2.classList.add("perfil__post")
     imgDialogPost2.classList.add("perfil__img")
     h2post2.classList.add("secondary__title")
     ProficicaoPost2.classList.add("secondary__text")
@@ -95,7 +95,7 @@ function henderPost() {
     //adicinando classes
 
     articlePost3.classList.add("article__post")
-    divPerfilPost3.classList.add("perfil")
+    divPerfilPost3.classList.add("perfil__post")
     imgDialogPost3.classList.add("perfil__img")
     h2post3.classList.add("secondary__title")
     ProficicaoPost3.classList.add("secondary__text")

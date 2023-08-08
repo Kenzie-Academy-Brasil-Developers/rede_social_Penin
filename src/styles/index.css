@@ -1,5 +1,6 @@
 body {
     font-family: "Inter", sans-serif;
+    
 }
 
 .perfil__img {
@@ -23,6 +24,15 @@ body {
 
 }
 
+.reader_img{
+    margin-left: 3.4rem;
+}
+
+.reader__sair {
+margin-right: 3.4rem;
+color: var(--white-fixed);
+
+}
 
 
 .main__section {
@@ -67,18 +77,22 @@ body {
     flex-direction: column;
     gap: 2rem;
     align-items: flex-start;
-    border: solid 2px var(--gray2);
+    border: solid 1px var(--gray2);
     width: 30rem;
     height: 3.5rem;
+    padding: 5px;
+    border-radius: 2px;
 }
 
 .description__post__form {
     width: 30rem;
     height: 5.5rem;
-    border: solid 2px var(--gray2);
+    border: solid 1px var(--gray2);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 8px;
+    border-radius: 2px;
 }
 
 
@@ -99,6 +113,7 @@ button {
 }
 
 .post__button {
+    cursor: pointer;
     width: 4rem;
     height: 2rem;
     background-color: var(--brand-1);
@@ -107,6 +122,7 @@ button {
     align-items: center;
     justify-content: center;
     align-self: flex-end;
+    border-radius: 4px;
 
 }
 
@@ -117,12 +133,13 @@ button {
 
 
 .follow__button {
+    cursor: pointer;
     width: 4rem;
     height: 2rem;
     background-color: var(--white-fixed);
     color: var(--gray1);
     border: solid 0.5px var(--gray1);
-
+    border-radius: 4px;
 
 }
 
@@ -131,6 +148,7 @@ button {
 .follow__button:hover {
     background-color: var(--white-fixed);
     border: solid 0.5px var(--brand-2);
+    color: var(--brand-2);
 }
 
 .follow__button:focus {
@@ -146,14 +164,15 @@ button {
 
 
 .henderButton {
-
+cursor: pointer;
     width: 5rem;
     height: 2rem;
     background-color: var(--gray1);
     color: var(--white-fixed);
+    border-radius: 4px;
 }
 
-.open-post:hover {
+.henderButton:hover {
     background-color: var(--gray0);
 }
 
@@ -163,6 +182,7 @@ button {
 }
 
 .open__post {
+    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -189,10 +209,11 @@ button {
 .close__post1,
 .close__post2,
 .close__post3 {
+    cursor: pointer;
     width: 50px;
     height: 50px;
     font-size: large;
-    color: var(--gray2);
+    color: var(--gray3);
     position: absolute;
     right: 0px;
     background-color: white;
@@ -202,6 +223,8 @@ button {
 .second__modal,
 .third__modal {
     width: 70%;
+    border-radius: 10px;
+    border: solid 2px black;
 }
 
 
@@ -284,7 +307,7 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
-
+        
     }
 
 }
